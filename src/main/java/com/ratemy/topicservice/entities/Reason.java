@@ -1,4 +1,4 @@
-package com.ratemy.topicservice;
+package com.ratemy.topicservice.entities;
 
 
 import javax.persistence.*;
@@ -22,6 +22,10 @@ public class Reason {
     private Long id;
     private String message;
 
+    private Long groupId;
+
+    private Long subjectId;
+
     public Reason() {
     }
 
@@ -43,5 +47,21 @@ public class Reason {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public Long getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(Long groupId) {
+        this.groupId = groupId;
+    }
+
+    public Long getSubjectId() {
+        return subjectId;
+    }
+
+    public void setSubjectId(Long subjectId) {
+        this.subjectId = subjectId;
     }
 }

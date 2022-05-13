@@ -1,4 +1,4 @@
-package com.ratemy.topicservice;
+package com.ratemy.topicservice.entities;
 
 import javax.persistence.*;
 
